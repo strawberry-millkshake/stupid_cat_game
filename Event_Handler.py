@@ -28,7 +28,7 @@ class Event_Handler():
         for event_to_remove in handled_events:
             self.all_events.pop(event_to_remove)
     
-    # a method that other objects can call on the event handler to add an event to the cue
+    # a method that other objects can call on the event handler to add an event to the queue
     def throw_event(self, event):
         self.all_events.append(event)
         
